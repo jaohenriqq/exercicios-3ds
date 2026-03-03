@@ -1,7 +1,7 @@
 const validarPedido = require("../index")
 
 
-test("validar pedido", () => {
+test(" Pedido válido deve retornar true", () => {
     let pedido = {
 
         cliente: "Carlos",
@@ -15,7 +15,7 @@ test("validar pedido", () => {
 
 
 
-test("Cliente Obrigatorio", () => {
+test("Pedido com total 0 deve retornar false", () => {
     let pedido = {
 
         total: 150,
@@ -27,7 +27,7 @@ test("Cliente Obrigatorio", () => {
 })
 
 
-test(" pedido", () => {
+test("Pedido sem cliente deve retornar false", () => {
     let pedido = {
 
         cliente: "Carlos",
@@ -40,7 +40,7 @@ test(" pedido", () => {
 })
 
 
-test("total", () => {
+test("Pedido sem itens deve retornar false", () => {
     let pedido = {
 
         cliente: "Carlos",
